@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<TITLE></TITLE>
+	</HEAD>
+	<BODY>
+		<input type="number" onchange="calculo()" id="peso">
+		<input type="number"  onchange="calculo()" id="altura">
+		<button onclick="calculo()">calculo</button>
+		<h1 id="resu">hola</h1>
+		<SCRIPT type="text/javascript">
+			//Este codigo ha sido generado por el modulo psexport 20230904-w32 de PSeInt.
+			//Es posible que el codigo generado no sea completamente correcto. Si encuentra
+			//errores por favor reportelos en el foro (http://pseint.sourceforge.net).
+
+			function calculo(){
+				var imc = peso.value / (altura.value*altura.value)
+				//alert(imc);
+				resu.innerText = imc;
+			}
+			
+		</SCRIPT>
+	</BODY>
+</HTML>
